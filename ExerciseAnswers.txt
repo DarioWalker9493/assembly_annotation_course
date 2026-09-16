@@ -10,10 +10,14 @@ per-base quality as well as sequence-content bias, duplication and overrepresent
 Therefore, filtering/trimming with fastp is appropriate before downstream analysis.
 
 #Q2
-fastp filtering: Of 45,241,360 RNA-seq reads, 5,434,148 reads (12.0%) were filtered, 
-leaving 39,807,212 reads. In addition, adapter sequences were trimmed from 3,510,455 reads. 
-Read quality improved, with the Q20 rate increasing from 88.9% to 93.8% and the Q30 rate from 
-78.6% to 83.6%.
+RNA-seq filtering and trimming:
+fastp reduced the dataset from 45,241,360 to 39,807,212 reads, meaning that 5,434,148 reads (12.0%)
+were filtered. Adapter sequences were trimmed from 3,510,455 reads. Read quality improved, with the
+Q20 rate increasing from 88.9% to 93.8% and the Q30 rate from 78.6% to 83.6%. FastQC after trimming
+showed that overrepresented sequences were no longer detected and the per-base sequence quality of 
+read 2 improved from FAIL to PASS. Overall, the quality improved after fastp processing.
 
-PacBio coverage: The PacBio HiFi dataset contains 9.90 Gb of sequence. Assuming an A. thaliana 
-genome size of approximately 135 Mb, the expected sequencing coverage is approximately 73×.
+PacBio coverage:
+The PacBio HiFi dataset contains 570,354 reads and approximately 9.90 Gb of sequence data.
+Assuming an Arabidopsis thaliana genome size of approximately 135 Mb, the expected genome coverage 
+is about 73×.

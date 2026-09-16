@@ -21,3 +21,6 @@ PacBio coverage:
 The PacBio HiFi dataset contains 570,354 reads and approximately 9.90 Gb of sequence data.
 Assuming an Arabidopsis thaliana genome size of approximately 135 Mb, the expected genome coverage 
 is about 73×.
+
+#Q3
+GenomeScope output graphs: http://genomescope.org/genomescope2.0/analysis.php?code=I7GNN5lXW5JLtggInrp1

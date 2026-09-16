@@ -12,6 +12,8 @@
 # ----------------------------
 # Directories and variables
 # ----------------------------
+# Use HiFi fastq as imput (RNA would not work as there have different transcription levels would not work!)
+# Used k- value of 21
 
 WORKDIR=/data/users/dwalker/assembly_annotation_course
 

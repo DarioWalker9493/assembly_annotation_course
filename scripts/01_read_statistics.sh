@@ -6,7 +6,7 @@
 #SBATCH --job-name=fastqc
 #SBATCH --output=/data/users/dwalker/assembly_annotation_course/read_QC/fastqc/fastqc_%j.out
 #SBATCH --error=/data/users/dwalker/assembly_annotation_course/read_QC/fastqc/fastqc_%j.err
-#SBATCH --partition=pibu_el8
+#SBATCH --partition=pshort_el8
 
 
 # ----------------------------

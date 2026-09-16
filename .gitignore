@@ -1,0 +1,22 @@
+# Raw data links / sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# QC output
+read_QC/fastqc/*
+read_QC/fastp/*
+read_QC/kmer_counting/*
+
+# Assemblies / large generated files
+assemblies/*
+
+# SLURM logs
+*.out
+*.err
+*.o
+*.e
+
+# Misc
+.DS_Store

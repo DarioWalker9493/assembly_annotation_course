@@ -24,3 +24,34 @@ is about 73×.
 
 #Q3
 GenomeScope output graphs: http://genomescope.org/genomescope2.0/analysis.php?code=I7GNN5lXW5JLtggInrp1
+1. Is the estimated genome size expected?
+Yes. GenomeScope estimated a haploid genome size of approximately 135.24–135.32 Mb for Lu-1. 
+This is very close to the expected genome size of Arabidopsis thaliana. In the pan-genome study 
+used for this course, the 69 accessions had assembly sizes between 128 and 148 Mb, with an average 
+of approximately 135 Mb. Therefore, the estimated genome size is well within the expected range.
+
+2. Is the percentage of heterozygosity expected?
+Yes. GenomeScope estimated a heterozygosity of approximately 0.047–0.058% (model estimate ≈ 0.052%), 
+which is very low. This is expected for A. thaliana, since it is predominantly self-fertilizing 
+and natural accessions are usually highly homozygous. Population studies estimate that A. thaliana 
+self-fertilizes approximately 97% of the time, strongly reducing heterozygosity within individuals.
+
+3. Is the coverage expected?
+Yes, broadly. GenomeScope estimated kmercov = 31.96. For a diploid genome, this corresponds to the 
+single-copy/heterozygous k-mer coverage; the major homozygous peak is therefore expected at 
+approximately 2 × 31.96 ≈ 64×, which is also visible in the k-mer spectrum. GenomeScope defines 
+kmercov as the average k-mer coverage of the polyploid genome.
+Independently, the PacBio HiFi dataset contained 9.90 Gb of sequence. Using a genome size of about 
+135.3 Mb gives:
+9.9 Gb / 135.3 = 73x
+Thus, the ~64× homozygous k-mer peak is reasonably consistent with the ~73× coverage calculated 
+directly from total sequenced bases. The values do not have to be identical because k-mer coverage 
+is affected by sequencing errors, read ends, coverage variation, and repetitive sequence.
+
+Bonus: Why are we using canonical k-mers?
+Canonical k-mers are used because sequencing reads can originate from either strand of the DNA 
+molecule. For each k-mer, the canonical representation treats the k-mer and its reverse complement
+as the same sequence, typically by storing only one standardized representation. This prevents the 
+same genomic sequence from being counted separately depending on strand orientation and produces a 
+strand-independent k-mer spectrum. GenomeScope therefore explicitly recommends counting canonical 
+k-mers with Jellyfish using the -C option.

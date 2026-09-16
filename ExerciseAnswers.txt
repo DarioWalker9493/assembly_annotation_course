@@ -1,0 +1,10 @@
+#Answer to Questions
+
+#Q1
+Read lengths: PacBio HiFi reads range from 62 to 46,056 bp. The Illumina RNA-seq reads are
+101 bp paired-end reads.
+Quality: The PacBio HiFi reads show good overall sequence quality. 
+The variable read-length distribution is expected for long-read sequencing.
+The RNA-seq data show good overall per-sequence quality, but FastQC reports reduced
+per-base quality as well as sequence-content bias, duplication and overrepresented sequences.
+Therefore, filtering/trimming with fastp is appropriate before downstream analysis.

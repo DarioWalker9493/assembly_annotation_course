@@ -24,3 +24,13 @@ assemblies/*
 # Links to course raw data
 /Lu-1
 /RNAseq_Sha
+
+# K-mer counting large intermediate files
+read_QC/kmer_counting/*.jf
+read_QC/kmer_counting/*.out
+read_QC/kmer_counting/*.err
+
+# Keep histogram and GenomeScope results
+!read_QC/kmer_counting/*.histo
+!read_QC/kmer_counting/genomescope/
+!read_QC/kmer_counting/genomescope/*

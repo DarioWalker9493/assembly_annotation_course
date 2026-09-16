@@ -1,0 +1,30 @@
+GenomeScope 2.0 results - Lu-1
+
+Input:
+Accession: Lu-1
+Input histogram: Lu-1_k21.histo
+K-mer length (k): 21
+Ploidy: 2
+Max k-mer coverage: -1
+
+GenomeScope estimates:
+Homozygous (aa): 99.9417 - 99.9534 %
+Heterozygous (ab): 0.0466119 - 0.0582786 %
+
+Genome haploid length: 135,238,388 - 135,319,625 bp
+Genome repeat length: 30,664,207 - 30,682,626 bp
+Genome unique length: 104,574,181 - 104,636,998 bp
+
+Model fit: 79.0096 - 97.4151 %
+Read error rate: 0.174005 %
+
+Model parameters:
+Estimated heterozygosity (r1): 0.05244 %
+Estimated k-mer coverage: 31.96
+Bias: 0.5685
+d: 0.02352
+
+Interpretation:
+The estimated haploid genome size is approximately 135.3 Mb.
+The estimated heterozygosity is approximately 0.052 %.
+The estimated k-mer coverage is approximately 32x.

@@ -20,3 +20,7 @@ assemblies/*
 
 # Misc
 .DS_Store
+
+# Links to course raw data
+/Pyl-1v
+/RNAseq_Sha

@@ -8,3 +8,12 @@ The variable read-length distribution is expected for long-read sequencing.
 The RNA-seq data show good overall per-sequence quality, but FastQC reports reduced
 per-base quality as well as sequence-content bias, duplication and overrepresented sequences.
 Therefore, filtering/trimming with fastp is appropriate before downstream analysis.
+
+#Q2
+fastp filtering: Of 45,241,360 RNA-seq reads, 5,434,148 reads (12.0%) were filtered, 
+leaving 39,807,212 reads. In addition, adapter sequences were trimmed from 3,510,455 reads. 
+Read quality improved, with the Q20 rate increasing from 88.9% to 93.8% and the Q30 rate from 
+78.6% to 83.6%.
+
+PacBio coverage: The PacBio HiFi dataset contains 9.90 Gb of sequence. Assuming an A. thaliana 
+genome size of approximately 135 Mb, the expected sequencing coverage is approximately 73×.

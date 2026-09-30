@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#SBATCH --time=08:00:00
+#SBATCH --time=02:00:00
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=16
 #SBATCH --job-name=merqury

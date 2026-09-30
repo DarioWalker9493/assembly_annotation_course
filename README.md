@@ -1,11 +1,15 @@
 # Assembly and Annotation Course
 
-Scripts and results from the MSc Assembly and Annotation course.
+# Assembly and Annotation Course
+
+Scripts and selected results from the MSc Assembly and Annotation course.
 
 The workflow includes read QC, k-mer analysis, genome and transcriptome assembly, and assembly evaluation.
 
 Main tools used:
 - fastp / FastQC
+- Jellyfish
+- GenomeScope
 - Flye
 - hifiasm
 - LJA
@@ -14,4 +18,7 @@ Main tools used:
 - QUAST
 - Merqury
 
-Scripts are organized by course week in the `scripts/` folder.
+Scripts are organized by course week in `scripts/`.
+
+Selected k-mer results are stored in `read_QC/`.
+Exercise answers are collected in `Exercise_Answers.md`.

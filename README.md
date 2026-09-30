@@ -1,7 +1,5 @@
 # Assembly and Annotation Course
 
-# Assembly and Annotation Course
-
 Scripts and selected results from the MSc Assembly and Annotation course.
 
 The workflow includes read QC, k-mer analysis, genome and transcriptome assembly, and assembly evaluation.

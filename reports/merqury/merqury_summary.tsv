@@ -1,0 +1,4 @@
+Assembly	Error_kmers	Total_kmers	QV	Error_rate	1_error_per_bp	Completeness_%
+flye	837	138065779	65.40	2.887e-07	3464007	99.23
+hifiasm	8751	158421114	55.80	2.630e-06	380157	98.81
+lja	112120	149662523	44.47	3.569e-05	28022	99.34

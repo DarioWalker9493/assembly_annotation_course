@@ -4,9 +4,11 @@
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=16
 #SBATCH --job-name=quast
-#SBATCH --partition=pibu_el8
+#SBATCH --partition=pshort_el8
 #SBATCH --output=/data/users/dwalker/assembly_annotation_course/logs/quast_%j.out
 #SBATCH --error=/data/users/dwalker/assembly_annotation_course/logs/quast_%j.err
+
+set -euo pipefail
 
 
 # ----------------------------
@@ -35,7 +37,8 @@ mkdir -p ${OUTDIR}
 
 echo "===== QUAST without reference ====="
 
-apptainer exec ${QUAST} quast.py \
+apptainer exec ${QUAST} \
+    quast.py \
     ${FLYE} \
     ${HIFIASM} \
     ${LJA} \
@@ -51,7 +54,10 @@ apptainer exec ${QUAST} quast.py \
 
 echo "===== QUAST with TAIR10 reference ====="
 
-apptainer exec ${QUAST} quast.py \
+apptainer exec \
+    --bind /data/courses:/data/courses \
+    ${QUAST} \
+    quast.py \
     ${FLYE} \
     ${HIFIASM} \
     ${LJA} \

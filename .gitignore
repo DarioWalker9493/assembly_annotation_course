@@ -33,4 +33,4 @@ read_QC/kmer_counting/*.err
 # Keep histogram and GenomeScope results
 !read_QC/kmer_counting/*.histo
 !read_QC/kmer_counting/genomescope/
-!read_QC/kmer_counting/genomescope/*
+!read_QC/kmer_counting/genomescope/*busco_downloads/

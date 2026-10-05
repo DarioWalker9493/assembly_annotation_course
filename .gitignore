@@ -34,3 +34,15 @@ read_QC/kmer_counting/*.err
 !read_QC/kmer_counting/*.histo
 !read_QC/kmer_counting/genomescope/
 !read_QC/kmer_counting/genomescope/*busco_downloads/
+
+# Large analysis outputs
+busco_downloads/
+busco_results/
+merqury_results/
+merqury_results_final/
+merqury_results_fk/
+mummer_results/
+
+# Cluster logs
+logs/
+quast_results/

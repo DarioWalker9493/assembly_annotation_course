@@ -46,3 +46,4 @@ mummer_results/
 # Cluster logs
 logs/
 quast_results/
+read_QC/kmer_counting/
